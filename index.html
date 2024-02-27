@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/hein.jpg">
+    <title>Verificador de acesso</title>
+</head>
+
+<!--
+    Condicionais ou laços de repetição: simples (if), composta(if-else), switch.
+    resultam em valores booleanos (true or false)
+
+    Atribuição -> =
+
+    Operadores de comparação:
+    == Igual (valor)
+    === Triplo igual (valor e tipo)
+    != Diferente
+    < Menor que
+    <= Menor ou igual
+    > Maior que
+    >= Maior ou igual
+
+    Operadores Lógicos:
+    &&  "and" "e" Ambos os itens devem ser verdadeiros para retornar verdadeiro
+    //  "or" "ou" qualquer item sendo verdadeiro retorna verdadeiro
+    !   "not" "nao" inverte o valor lógico (true vira false e false vira true)
+
+    if (condição) {
+        escopo ({}) com instruções (o que acontecerá caso a condição seja verdadeira)
+    }
+
+
+-->
+
+<body>
+    <main class="mainPrincipal">
+        <div class="formulario">
+            <h1>Verificação de idade</h1>
+            <p>Por favor, insira a sua idade:</p>
+            <input type="number" name="" id="idadeInput">
+            <p class="erro"></p>
+            <button onclick="verificaIdade()">Verificar</button>
+        </div>
+    </main>
+
+    <script>
+    function verificaIdade(params) {
+        var idadeInput = document.getElementById('idadeInput').value;
+        var idade = parseInt(document.getElementById('idadeInput').value);
+        const erro = document.querySelector('.erro')
+        if (idade <= 0 || idadeInput === "") {
+            erro.innerHTML = 'Insira corretamente os dados'
+        }
+        else if (idade >= 18 && idade >= 1) {
+            window.location.href = 'maior.html'; //para chamar outros arquivos
+        } else {window.location.href = 'menor.html'}
+    }
+    </script>
+</body>
+</html>

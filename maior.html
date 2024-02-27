@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/hein.jpg">
+    <link rel="stylesheet" href="maiorMenor.css">
+    <title>Maior</title>
+</head>
+<body id="maior">
+
+    <header>
+        <div>
+        <h2>Cerveja Verde</h2>
+        <div class="imagens">
+            <div class="inativo"><p></p></div>
+            <img src="img/carrinho-de-compras.png" id="carrinho">
+            <img src="img/perfil.png" alt="">
+        </div>
+     </div>
+
+     <img class="sacola" src="img/giphy.gif" alt="">
+    </header>
+    
+    <main class="maior">
+        <h1>Acesso liberado, Aproveite!</h1>
+        <br>
+        <img src="img/5a05b36a96f33-5a05b3cb04aab-980x480.webp" alt="">
+        <h2>Confira as promoções</h2>
+
+        <div class="maior-dividido">
+            <img src="img/image-removebg-preview (2).png" alt="">
+            <div>
+                <h2>R$ 4,50</h2>
+                <h3>Lata 350ml</h3>
+                <div>
+                    <button class="adiciona">Adicionar ao carrinho</button>
+                    <button class="remove">Remover do carrinho</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="maior-dividido">
+            <div>
+                <h2>R$ 99,99</h2>
+                <h3>Chopp 5 Litros</h3>
+                <div>
+                    <button class="adiciona">Adicionar ao carrinho</button>
+                    <button class="remove">Remover do carrinho</button>
+                </div>
+            </div>
+            <img src="img/chopp.png" alt="">
+        </div>
+        <div class="maior-dividido">
+            <img src="img/long.png" alt="">
+            <div>
+                <h2>R$ 6,50</h2>
+                <h3>Long neck 350ml</h3>
+                <div>
+                    <button class="adiciona">Adicionar ao carrinho</button>
+                    <button class="remove">Remover do carrinho</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const buttonMais = document.querySelector('.adiciona');
+        const buttonMenos = document.querySelector('.remove');
+        const backgroundCarrinho = document.querySelector('.imagens div');
+        const quantidade = document.querySelector('.imagens div p');
+    
+        buttonMais.addEventListener('click', function() {
+            backgroundCarrinho.classList.remove('inativo');
+            let valorQuantidade = quantidade.textContent;
+            if (valorQuantidade <= 0) {
+                valorQuantidade = -1
+                valorQuantidade++
+            }
+            valorQuantidade++;
+            quantidade.innerHTML = valorQuantidade.toString();
+        });
+
+        buttonMenos.addEventListener('click', function() {
+            let valorQuantidade = quantidade.textContent;
+            if (valorQuantidade <= 1) {
+                backgroundCarrinho.classList.add('inativo')
+            }
+            valorQuantidade--;
+            quantidade.innerHTML = valorQuantidade.toString();
+        });
+    </script>
+    
+</body>
+</html>

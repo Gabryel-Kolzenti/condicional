@@ -1,0 +1,92 @@
+header{
+    display: flex;
+    background-color: greenyellow;
+    width: 100vw;
+    height: 9.5vh;
+    position: fixed;
+    top: 0;
+    padding: 1vh 10vw;
+}
+
+header div{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+
+header div .imagens{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.imagens div{
+    position: absolute;
+    left: 77%;
+    top: 40%;
+    background-color: red;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.imagens .inativo{
+    background-color: greenyellow;
+    color: greenyellow;
+}
+
+.imagens .inativo p{
+    color: greenyellow;
+}
+
+.imagens p{
+    font-size: 1.3em;
+    color: rgb(44, 200, 44);
+    z-index: 10;
+    padding-left: 22%;
+    font-weight: 600;
+}
+
+header #carrinho{
+    z-index: 1;
+}
+
+header .sacola{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20%;
+    left: 73%;
+}
+
+header .sacolaAtivo{
+    position: absolute;
+    width: 41px;
+    height: 30px;
+    top: 0%;
+    left: 72.8%;
+}
+
+header img{
+    margin-left: 5vw;
+    width: 6%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.maior-dividido button{
+    padding: 1.5vh 3vw;
+    border-radius: 10px;
+    background-color: rgba(24, 202, 77, 0.779);
+    margin-top: 1vh;
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+.maior-dividido button:hover{
+    background-color: rgb(81, 240, 142);
+    transition: 0.35s;
+}

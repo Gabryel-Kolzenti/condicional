@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.mainPrincipal{
+    background-image: url(img/opcao11.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main{
+    background-image: url(img/opcao11.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20vh;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+    height: 100vh;
+}
+
+.formulario h1{
+    color: green;
+    margin-bottom: 5vh;
+}
+
+.formulario p{
+    color: rgb(47, 177, 56);
+    text-shadow: 1px 1px 1px rgb(17, 89, 3);
+    margin-bottom: 1vh;
+}
+
+.formulario input{
+    margin: 1vh 0vw;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: green;
+    z-index: 10;
+    background-color: rgba(12, 245, 0, 0.138);
+}
+
+.formulario button{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.755);
+    border-width: 2.3px;
+    border-color: green;
+    transition: 0.25s;
+    font-size: 1.1em;
+    font-weight: 800px;
+}
+
+.formulario button:hover{
+    background-color: rgba(0, 128, 0, 0.885);
+    transition: 0.25s;
+}
+
+.formulario button:active{
+    transform: scale(1.01);
+    transition: 0.25s;
+}
+
+
+/*----------------------------------Maior de idade-------------------------*/
+#maior{
+    background-color: rgb(41, 110, 6);
+    margin-top: 10vh;
+}
+
+.maior{
+   text-align: center;
+}
+
+.maior img{
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.maior h2{
+    font-size: 2.2em;
+    margin: 2vh 0vw;
+}
+
+.maior-dividido{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    background-color: green;
+    height: 40vh;
+    margin: 5vh 10vw;
+    border-radius: 10px;
+}
+
+.maior-dividido div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.maior-dividido img{
+    margin: 1.5vh 0vw;
+    width: 10%;
+    height: 90%;
+}
+
+.maior-dividido h2{
+    font-size: 3.5em;
+}
+/*----------------------------------Maior de idade-------------------------*/
+/*----------------------------------Menor de idade-------------------------*/
+#menor{
+    background-color: rgb(255, 0, 0);
+    margin-top: 5vh;
+}
+
+.menor{
+   text-align: center;
+}
+
+.menor img{
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.menor h2{
+    font-size: 2.2em;
+    margin: 2vh 0vw;
+}
+
+.menor-dividido{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    background-color: rgb(209, 34, 28);
+    height: 40vh;
+    margin: 5vh 10vw;
+    border-radius: 10px;
+}
+
+.menor-dividido div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menor-dividido img{
+    margin: 1.5vh 0vw;
+    width: 10%;
+    height: 90%;
+}
+
+.menor-dividido h2{
+    font-size: 3.5em;
+}
+/*----------------------------------Menor de idade-------------------------*/
